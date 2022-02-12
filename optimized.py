@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 import urllib.request as urllib
 
 
-client_id = "0c25fe414ae54465adc3de1384b17b42"
-client_secret = "2de2cbd2c63546b5bdcf62ecf888fe70"
+client_id = input("what's your client id?: ")
+client_secret = input("what's your client secret?: ")
 
 client_credentials_manager = SpotifyClientCredentials(client_id = client_id, client_secret = client_secret)
 sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
