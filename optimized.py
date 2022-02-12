@@ -176,7 +176,7 @@ username_dictionary = dict()
 
 a.get_data(uniqname_dictionary, username_dictionary)
 
-'''
+
 # function for reading through all individual playlists
 for i in range(len(username_dictionary)):
     # get key and playlist id from list
@@ -200,7 +200,6 @@ a.call_playlist("spotify", "37i9dQZF1DXcBWIGoYBM5M?si=67999d41839a48a9").to_csv(
 
 # get new album releases
 a.new_release_album().to_csv(newfolder_to_export_path+ "new_album_release.csv", encoding = "utf-8-sig")
-'''
 
 
 
